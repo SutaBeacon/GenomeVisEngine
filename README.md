@@ -17,4 +17,4 @@ Start:
 npm start
 
 Preview in browser: 
-localhost:8080/scatter.html
+localhost:8080/
