@@ -3,7 +3,8 @@ module.exports = {
   entry: {
     scatter: './scatter.js',
     chords: './chords.js',
-    boxplot: './boxplot.js'
+    boxplot: './boxplot.js',
+    occurrence: './occurrence.js'
   },
   output: {
     path: __dirname + '/dist',
