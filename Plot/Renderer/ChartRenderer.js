@@ -10,20 +10,19 @@ import {
 } from '../Util';
 import baseConfig from '../Config/base';
 import defaultConfigs from '../Config';
-import {
-  CanvasSpriteRenderer
-} from 'pixi.js';
-import {
-  SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION
-} from 'constants';
+
 export default class ChartRenderer extends BaseRenderer {
   constructor(elem, options) {
     super(elem, options)
   }
   iris(data, configs) {
     const options = merge({}, defaultConfigs.base, configs);
-    const margin = options.canvasMargin;
+    // const margin = options.canvasMargin;
     const contentSize = options.contentSize;
+    const margin = {
+      h: (this.renderer.view.width / this.renderer.resolution - contentSize.w) / 2,
+      v: (this.renderer.view.height / this.renderer.resolution - contentSize.h) / 2
+    }
     const range = options.range;
 
     const container = d3.select(this.renderer.view)
@@ -153,7 +152,11 @@ export default class ChartRenderer extends BaseRenderer {
   candleStick(data, configs) {
     const options = merge({}, defaultConfigs.base, defaultConfigs.chart.candleStick, configs);
     const contentSize = options.contentSize;
-    const margin = options.canvasMargin;
+    // const margin = options.canvasMargin;
+    const margin = {
+      h: (this.renderer.view.width / this.renderer.resolution - contentSize.w) / 2,
+      v: (this.renderer.view.height / this.renderer.resolution - contentSize.h) / 2
+    }
     const blockWidth = options.blockWidth;
     let x = d3.scaleTime().range([0, contentSize.w]);
     let y = d3.scaleLinear().range([contentSize.h, 0]);
@@ -309,7 +312,11 @@ export default class ChartRenderer extends BaseRenderer {
     const unitSize = options.unitSize;
     const gap = options.gap;
     const contentSize = options.contentSize;
-    const margin = options.canvasMargin;
+    // const margin = options.canvasMargin;
+    const margin = {
+      h: (this.renderer.view.width / this.renderer.resolution - contentSize.w) / 2,
+      v: (this.renderer.view.height / this.renderer.resolution - contentSize.h) / 2
+    }
     const style = options.style;
     const svg = d3.select(this.renderer.view)
       .toCanvas(this.renderer)
@@ -487,7 +494,11 @@ export default class ChartRenderer extends BaseRenderer {
   boxplot(data, configs) {
     const options = merge({}, defaultConfigs.base, configs);
     const contentSize = options.contentSize;
-    const margin = options.canvasMargin;
+    // const margin = options.canvasMargin;
+    const margin = {
+      h: (this.renderer.view.width / this.renderer.resolution - contentSize.w) / 2,
+      v: (this.renderer.view.height / this.renderer.resolution - contentSize.h) / 2
+    }
     const barWidth = options.barWidth;
     const ticks = options.ticks;
     // let x = d3.scaleLinear().domain(options.range.x).range([0, contentSize.w]);

@@ -2,16 +2,16 @@ import Plot from './Plot/index.js';
 var canvas = document.getElementsByTagName('canvas')[0];
 canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
-new Plot.chart(document.getElementsByTagName('canvas')[0], {
-  bgColor: 0xF4F4F4
+new Plot.chart(canvas, {
+  bgColor: 0xffffff
 }).boxplot({
   fileUrl: '/dist/boxplot/boxplot.txt',
   fileType: 'tsv'
 }, {
   barWidth: 20,
   contentSize: {
-    w: document.body.clientWidth*0.75,
-    h: document.body.clientHeight*0.75
+    w: 1000,
+    h: 600
   },
   style: {
     fill: 'rgb(225, 123, 109)',

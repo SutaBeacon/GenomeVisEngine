@@ -60,12 +60,11 @@ d3.tsv('/dist/occurrence/Fig_Partial_SCC_PanCancer_PurityAdjusted_ImmGenes_data.
       blocks.push(block)
     }
   }
-  console.log(contentSize)
-  new Plot.chart(document.getElementsByTagName('canvas')[0], {
+  new Plot.chart(canvas, {
     bgColor: 0xffffff
   }).occurrence(blocks, {
     contentSize,
-    canvasMargin: margin,
+    // canvasMargin: margin,
     range: {
       x: xAxisLabel,
       y: yAxisLabel
