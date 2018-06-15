@@ -632,7 +632,7 @@ export default class ChartRenderer extends BaseRenderer {
             .attr("y2", function (d) {
               return yScale(d.y2);
             })
-            .attr("stroke", style.stroke)
+            .attr("stroke", typeof style.stroke === 'function' ? style.stroke(key) : style.stroke)
             .attr("stroke-width", style.strokeWidth)
             .attr("fill", "none");
 
@@ -654,24 +654,10 @@ export default class ChartRenderer extends BaseRenderer {
             .attr("fill", function (d) {
               return '#ffffff';
             })
-            .attr("stroke", style.stroke)
+            .attr("stroke", typeof style.stroke === 'function' ? style.stroke(key) : style.stroke)
             .attr("stroke-width", style.strokeWidth)
             .on('mouseover', function (d) {
-              var tipStr = self._generateTipStr([{
-                  title: 'X',
-                  value: key
-                },
-                {
-                  title: 'Upper quartile',
-                  value: d[2]
-                }, {
-                  title: 'Median',
-                  value: d[1]
-                }, {
-                  title: 'Lower quartile',
-                  value: d[0]
-                }
-              ])
+              var tipStr = self._generateTipStr(configs.boxTips(key, d))
               self.tipContent.html(tipStr)
               self.tip
                 .style('opacity', 0.9)
@@ -699,7 +685,7 @@ export default class ChartRenderer extends BaseRenderer {
             .attr("y2", function (d) {
               return yScale(d)
             })
-            .attr("stroke", style.stroke)
+            .attr("stroke", typeof style.stroke === 'function' ? style.stroke(key) : style.stroke)
             .attr("stroke-width", style.strokeWidth + 1)
             .attr("fill", "none");
 
@@ -712,17 +698,11 @@ export default class ChartRenderer extends BaseRenderer {
               return yScale(+d.value)
             })
             .attr('r', 2)
-            .attr('fill', style.fill)
+            .attr('fill', typeof style.fill === 'function' ? style.fill(key) : style.fill)
             .attr('stroke-width', 0)
             .attr('stroke', 'none')
             .on('mouseover', function (d) {
-              var tipStr = self._generateTipStr([{
-                title: 'X',
-                value: key
-              }, {
-                title: 'Y',
-                value: d.value
-              }])
+              var tipStr = self._generateTipStr(configs.outlierTips(key, d))
               self.tipContent.html(tipStr)
               self.tip
                 .style('opacity', 0.9)

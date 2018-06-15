@@ -17,7 +17,36 @@ new Plot.chart(canvas, {
     fill: 'rgb(225, 123, 109)',
     stroke: 'rgb(225, 123, 109)'
   },
-  zoom: true
+  zoom: true,
+  outlierTips: function (key, d) {
+    return [{
+      title: 'X',
+      value: key
+    }, {
+      title: 'value',
+      value: d.value
+    }, {
+      title: 'Histo Subtype',
+      value: d.HistoSubtype
+    }]
+  },
+  boxTips: function (key, quartile) {
+    return [{
+        title: 'X',
+        value: key
+      },
+      {
+        title: 'Upper quartile',
+        value: quartile[2]
+      }, {
+        title: 'Median',
+        value: quartile[1]
+      }, {
+        title: 'Lower quartile',
+        value: quartile[0]
+      }
+    ]
+  }
 })
 
 // new Plot.chart(document.getElementsByTagName('canvas')[0], {

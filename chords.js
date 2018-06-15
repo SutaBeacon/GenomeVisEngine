@@ -60,7 +60,7 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 			}]
 		}
 	}
-}, 
+},
 // {
 // 	circularType: 'heatmap',
 // 	name: 'CHG1',

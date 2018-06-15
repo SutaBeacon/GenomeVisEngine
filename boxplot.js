@@ -14,43 +14,42 @@ new Plot.chart(canvas, {
     h: 600
   },
   style: {
-    fill: 'rgb(50, 71, 166)',
-    stroke: 'rgb(50, 71, 166)',
+    fill: function (key) {
+      return 'rgb(50, 71, 166)'
+    },
+    stroke: function (key) {
+      return 'rgb(50, 71, 166)'
+    },
     opacity: 0.6
   },
-  zoom: true
+  zoom: true,
+  outlierTips: function (key, d) {
+    return [{
+      title: 'X',
+      value: key
+    }, {
+      title: 'value',
+      value: d.value
+    }, {
+      title: 'Histo Subtype',
+      value: d.HistoSubtype
+    }]
+  },
+  boxTips: function (key, quartile) {
+    return [{
+        title: 'X',
+        value: key
+      },
+      {
+        title: 'Upper quartile',
+        value: quartile[2]
+      }, {
+        title: 'Median',
+        value: quartile[1]
+      }, {
+        title: 'Lower quartile',
+        value: quartile[0]
+      }
+    ]
+  }
 })
-
-// new Plot.chart(document.getElementsByTagName('canvas')[0], {
-//   bgColor: 0xffffff
-// }).boxplot(boxPlotData, {
-//   barWidth: barWidth,
-//   range: {
-//     x: [-1, +groupKeys[groupKeys.length - 1] + 1],
-//     y: [min - 1, max + 1]
-//   },
-//   ticks: {
-//     x: {
-//       values: Object.keys(groupCounts),
-//       format: '.0f'
-//     }
-//   },
-//   contentSize: {
-//     w: width,
-//     h: height
-//   },
-//   zoom: true
-// })
-
-// function boxQuartiles(d) {
-//   return [
-//     d3.quantile(d, .25),
-//     d3.quantile(d, .5),
-//     d3.quantile(d, .75)
-//   ];
-// }
-
-// // Perform a numeric sort on an array
-// function sortNumber(a, b) {
-//   return a - b;
-// }
