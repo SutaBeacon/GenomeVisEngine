@@ -4,8 +4,8 @@ canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
 // customize the color
 const color = {
-  'GBM': 'rgb(50, 71, 166)',
-  'OV': 'rgb(50, 71, 166)'
+  'KIRC': '#e65229',
+  'CESC': '#e65229'
 }
 new Plot.chart(canvas, {
   bgColor: 0xf2f2f2
@@ -20,12 +20,10 @@ new Plot.chart(canvas, {
   },
   style: {
     fill: function (key) {
-      return 'rgb(50, 71, 166)'
-      // return color(key)
+      return color[key] || 'rgb(50, 71, 166)'
     },
     stroke: function (key) {
-      return 'rgb(50, 71, 166)'
-      // return color(key)
+      return color[key] || 'rgb(50, 71, 166)'
     },
     opacity: 0.6
   },
