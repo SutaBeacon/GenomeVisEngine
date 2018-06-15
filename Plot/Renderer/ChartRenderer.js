@@ -597,6 +597,24 @@ export default class ChartRenderer extends BaseRenderer {
         const axisY = svg.append("g").attr("transform", "translate(" + margin.h + ',' + margin.v + ')').attr('clip-path', 'url(#clipY)')
         const axisX = svg.append("g").attr("transform", "translate(" + margin.h + ',' + (contentSize.h + margin.v) + ')')
           .attr('clip-path', 'url(#clipX)')
+        // add legends
+        if (configs.legends) {
+          svg.append("g").attr("transform", "translate(" + (margin.h + contentSize.w / 2) + ',' + (contentSize.h + margin.v) + ')')
+            .append('text')
+            .style('font-size', configs.legends.fontSize && (configs.legends.fontSize + 'px') || '16px')
+            .style('text-anchor', 'middle')
+            .attr('x', 0)
+            .attr('y', configs.legends.xOffset)
+            .text(configs.legends.x);
+          svg.append("g").attr("transform", "translate(" + margin.h + ',' + (margin.v + contentSize.h / 2) + ')')
+            .append('text')
+            .style('font-size', configs.legends.fontSize && (configs.legends.fontSize + 'px') || '16px')
+            .style('text-anchor', 'middle')
+            .attr('x', -configs.legends.yOffset)
+            .attr('y', 0)
+            .attr('transform', 'rotate(-90)')
+            .text(configs.legends.y);
+        }
         // group the boxplot
         const content = container.append("g");
         xAxisData.forEach(function (key) {
@@ -657,6 +675,7 @@ export default class ChartRenderer extends BaseRenderer {
             .attr("stroke", typeof style.stroke === 'function' ? style.stroke(key) : style.stroke)
             .attr("stroke-width", style.strokeWidth)
             .on('mouseover', function (d) {
+              if (!configs.boxTips) return;
               var tipStr = self._generateTipStr(configs.boxTips(key, d))
               self.tipContent.html(tipStr)
               self.tip
@@ -702,6 +721,7 @@ export default class ChartRenderer extends BaseRenderer {
             .attr('stroke-width', 0)
             .attr('stroke', 'none')
             .on('mouseover', function (d) {
+              if (!configs.outlierTips) return;
               var tipStr = self._generateTipStr(configs.outlierTips(key, d))
               self.tipContent.html(tipStr)
               self.tip
