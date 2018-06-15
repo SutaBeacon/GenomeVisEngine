@@ -4,8 +4,13 @@ canvas.width = document.body.clientWidth;
 canvas.height = document.body.clientHeight;
 // customize the color
 const color = {
-  'KIRC': '#e65229',
-  'CESC': '#e65229'
+  'KIRC': '#DC4035',
+  'CESC': '#DC4035',
+  'SKCM': '#E0619D',
+  'SKCM': '#E0619D',
+  'PRAD': '#222222',
+  'GBM': '#222222',
+  'LGG': '#222222'
 }
 new Plot.chart(canvas, {
   bgColor: 0xf2f2f2
@@ -16,7 +21,7 @@ new Plot.chart(canvas, {
   barWidth: 24,
   contentSize: {
     w: 800,
-    h: 600
+    h: 540
   },
   style: {
     fill: function (key) {
@@ -31,9 +36,9 @@ new Plot.chart(canvas, {
   legends: {
     x: 'cancer',
     xOffset: 38,
-    y: 'Cytolytic.Activity',
+    y: 'cytolytic activity',
     yOffset: 45,
-    fontSize: 16
+    fontSize: 14
   },
   outlierTips: function (key, d) {
     return [{
