@@ -1,17 +1,32 @@
 "PatientID"	"key"	"HistoSubtype"	"value"
+"TCGA-BL-A0C8"	"BLCA"	"Muscle invasive urothelial carcinoma (unknown subtype)"	1.365758495
+"TCGA-A1-A0SB"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	0.497781337
+"TCGA-BI-A0VR"	"CESC"	"Cervical Squamous Cell Carcinoma"	28.1156369
+"TCGA-A6-2671"	"CRC"	"Colon Adenocarcinoma"	3.935575887
 "TCGA-02-0047"	"GBM"	"Glioblastoma Multiforme"	0.983977201
+"TCGA-BA-4074"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	2.302726809
+"TCGA-A3-3306"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	17.82951696
+"TCGA-A4-7286"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	8.523460776
+"TCGA-CS-4938"	"LGG"	"Astrocytoma"	0.287307129
+"TCGA-BC-4072"	"LIHC"	"Hepatocellular Carcinoma"	29.14910374
+"TCGA-05-4244"	"LUAD"	"Lung Adenocarcinoma - NOS"	5.369517469
+"TCGA-18-3406"	"LUSC"	"Lung Squamous Cell Carcinoma - NOS"	12.40137831
+"TCGA-04-1348"	"OV"	"Serous Cystadenocarcinoma"	13.8926731
+"TCGA-CH-5737"	"PRAD"	"Prostate Adenocarcinoma Acinar Type"	1.077144638
+"TCGA-BF-A1PU"	"SKCM"	"Melanoma"	0.668468016
+"TCGA-B7-5816"	"STAD"	"Stomach  Adenocarcinoma  Diffuse Type"	34.59037722
+"TCGA-BJ-A0YZ"	"THCA"	"Thyroid Papillary Carcinoma - Classical/usual"	1.962022497
+"TCGA-A5-A0G1"	"UCEC"	"Serous endometrial adenocarcinoma"	161.8758069
 "TCGA-02-0055"	"GBM"	"Glioblastoma Multiforme"	7.706075186
 "TCGA-02-2483"	"GBM"	"Glioblastoma Multiforme"	5.657702217
 "TCGA-02-2485"	"GBM"	"Glioblastoma Multiforme"	3.87755965
 "TCGA-02-2486"	"GBM"	"Glioblastoma Multiforme"	5.224661671
-"TCGA-04-1348"	"OV"	"Serous Cystadenocarcinoma"	13.8926731
 "TCGA-04-1357"	"OV"	"Serous Cystadenocarcinoma"	28.23410152
 "TCGA-04-1362"	"OV"	"Serous Cystadenocarcinoma"	1.946532628
 "TCGA-04-1364"	"OV"	"Serous Cystadenocarcinoma"	0.115026803
 "TCGA-04-1365"	"OV"	"Serous Cystadenocarcinoma"	10.02379714
 "TCGA-04-1514"	"OV"	"Serous Cystadenocarcinoma"	0.426643985
 "TCGA-04-1519"	"OV"	"Serous Cystadenocarcinoma"	1.095565868
-"TCGA-05-4244"	"LUAD"	"Lung Adenocarcinoma - NOS"	5.369517469
 "TCGA-05-4249"	"LUAD"	"Lung Adenocarcinoma - NOS"	8.188344609
 "TCGA-05-4250"	"LUAD"	"Lung Adenocarcinoma - NOS"	37.80024162
 "TCGA-05-4382"	"LUAD"	"Lung Adenocarcinoma Mixed Subtype"	12.79893319
@@ -180,7 +195,6 @@
 "TCGA-15-1444"	"GBM"	"Glioblastoma Multiforme"	1.109393763
 "TCGA-16-0846"	"GBM"	"Glioblastoma Multiforme"	8.220772361
 "TCGA-16-1045"	"GBM"	"Glioblastoma Multiforme"	9.140822133
-"TCGA-18-3406"	"LUSC"	"Lung Squamous Cell Carcinoma - NOS"	12.40137831
 "TCGA-18-3407"	"LUSC"	"Lung Squamous Cell Carcinoma - NOS"	9.323220715
 "TCGA-18-3408"	"LUSC"	"Lung Squamous Cell Carcinoma - NOS"	24.75262128
 "TCGA-18-3409"	"LUSC"	"Lung Basaloid Squamous Cell Carcinoma"	8.472292706
@@ -1351,7 +1365,6 @@
 "TCGA-99-8028"	"LUAD"	"Lung Adenocarcinoma - NOS"	62.1595393
 "TCGA-99-8032"	"LUAD"	"Lung Adenocarcinoma - NOS"	8.264232327
 "TCGA-99-8033"	"LUAD"	"Lung Adenocarcinoma - NOS"	71.78018256
-"TCGA-A1-A0SB"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	0.497781337
 "TCGA-A1-A0SD"	"BRCA"	"Infiltrating Ductal Carcinoma"	5.484084348
 "TCGA-A1-A0SE"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	4.486253454
 "TCGA-A1-A0SF"	"BRCA"	"Infiltrating Ductal Carcinoma"	16.34882115
@@ -1466,7 +1479,6 @@
 "TCGA-A2-A4S1"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	6.69588946
 "TCGA-A2-A4S2"	"BRCA"	"Infiltrating Lobular Carcinoma"	15.96724465
 "TCGA-A2-A4S3"	"BRCA"	"Infiltrating Ductal Carcinoma"	11.88330277
-"TCGA-A3-3306"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	17.82951696
 "TCGA-A3-3307"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	38.97593569
 "TCGA-A3-3308"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	14.69857417
 "TCGA-A3-3311"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	27.08815707
@@ -1512,7 +1524,6 @@
 "TCGA-A3-A6NJ"	"KIRC"	"Kidney Clear Cell Renal Carcinoma (unknown subtype)"	91.92545945
 "TCGA-A3-A6NL"	"KIRC"	"Kidney Clear Cell Renal Carcinoma (unknown subtype)"	41.81337803
 "TCGA-A3-A6NN"	"KIRC"	"Kidney Clear Cell Renal Carcinoma (unknown subtype)"	43.45936976
-"TCGA-A4-7286"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	8.523460776
 "TCGA-A4-7287"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	11.83000886
 "TCGA-A4-7288"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	1.228187794
 "TCGA-A4-7583"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	18.9177646
@@ -1543,7 +1554,6 @@
 "TCGA-A4-A6HP"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	8.61290013
 "TCGA-A4-A772"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma (unknown subtype)"	8.875405771
 "TCGA-A4-A7UZ"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma (unknown subtype)"	24.90283561
-"TCGA-A5-A0G1"	"UCEC"	"Serous endometrial adenocarcinoma"	161.8758069
 "TCGA-A5-A0G2"	"UCEC"	"Serous endometrial adenocarcinoma"	16.55213906
 "TCGA-A5-A0G3"	"UCEC"	"Serous endometrial adenocarcinoma"	0.133799574
 "TCGA-A5-A0G5"	"UCEC"	"Serous endometrial adenocarcinoma"	76.70703765
@@ -1587,7 +1597,6 @@
 "TCGA-A5-A3LP"	"UCEC"	"Serous endometrial adenocarcinoma"	8.49240823
 "TCGA-A5-A7WJ"	"UCEC"	"Uterine Corpus Endometrioid Carcinoma (unknown subtype)"	1.864757255
 "TCGA-A5-A7WK"	"UCEC"	"Uterine Corpus Endometrioid Carcinoma (unknown subtype)"	5.408475873
-"TCGA-A6-2671"	"CRC"	"Colon Adenocarcinoma"	3.935575887
 "TCGA-A6-2672"	"CRC"	"Colon Adenocarcinoma"	36.18699168
 "TCGA-A6-2674"	"CRC"	"Colon Mucinous Adenocarcinoma"	14.81172704
 "TCGA-A6-2675"	"CRC"	"Colon Adenocarcinoma"	10.48193532
@@ -2702,7 +2711,6 @@
 "TCGA-B6-A409"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	3.35984979
 "TCGA-B6-A40B"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	1.851770727
 "TCGA-B6-A40C"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	6.078629884
-"TCGA-B7-5816"	"STAD"	"Stomach  Adenocarcinoma  Diffuse Type"	34.59037722
 "TCGA-B7-5818"	"STAD"	"Stomach  Adenocarcinoma  Diffuse Type"	19.71941633
 "TCGA-B8-4143"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	69.26895921
 "TCGA-B8-4146"	"KIRC"	"Kidney Clear Cell Renal Carcinoma"	35.02830219
@@ -2748,7 +2756,6 @@
 "TCGA-B9-A5W8"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	16.77759261
 "TCGA-B9-A5W9"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	2.704792373
 "TCGA-B9-A69E"	"KIRP"	"Kidney Papillary Renal Cell Carcinoma"	21.88375713
-"TCGA-BA-4074"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	2.302726809
 "TCGA-BA-4076"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	1.846729473
 "TCGA-BA-4078"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	4.434794149
 "TCGA-BA-5149"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	11.25529045
@@ -2800,7 +2807,6 @@
 "TCGA-BB-A5HZ"	"HNSC"	"Head and Neck Squamous Cell Carcinoma (unknown subtype)"	1.910771583
 "TCGA-BB-A6UM"	"HNSC"	"Head and Neck Squamous Cell Carcinoma (unknown subtype)"	37.1273585
 "TCGA-BB-A6UO"	"HNSC"	"Head and Neck Squamous Cell Carcinoma (unknown subtype)"	11.86395775
-"TCGA-BC-4072"	"LIHC"	"Hepatocellular Carcinoma"	29.14910374
 "TCGA-BC-4073"	"LIHC"	"Hepatocellular Carcinoma"	22.45036494
 "TCGA-BC-A10Q"	"LIHC"	"Hepatocellular Carcinoma"	3.672068569
 "TCGA-BC-A10R"	"LIHC"	"Hepatocellular Carcinoma"	1.071987187
@@ -2823,7 +2829,6 @@
 "TCGA-BD-A2L6"	"LIHC"	"Hepatocellular Carcinoma (unknown subtype)"	6.076382034
 "TCGA-BD-A3EP"	"LIHC"	"Hepatocellular Carcinoma (unknown subtype)"	9.748954025
 "TCGA-BD-A3ER"	"LIHC"	"Hepatocellular Carcinoma (unknown subtype)"	1.492080926
-"TCGA-BF-A1PU"	"SKCM"	"Melanoma"	0.668468016
 "TCGA-BF-A1PV"	"SKCM"	"Melanoma"	0.671818526
 "TCGA-BF-A1PX"	"SKCM"	"Melanoma"	90.57009304
 "TCGA-BF-A1PZ"	"SKCM"	"Melanoma"	6.849050557
@@ -3028,10 +3033,8 @@
 "TCGA-BH-A6R9"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	15.27831223
 "TCGA-BH-A8FZ"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	9.408968001
 "TCGA-BH-A8G0"	"BRCA"	"Breast Invasive Carcinoma (unknown subtype)"	11.69465893
-"TCGA-BI-A0VR"	"CESC"	"Cervical Squamous Cell Carcinoma"	28.1156369
 "TCGA-BI-A0VS"	"CESC"	"Cervical Squamous Cell Carcinoma"	10.4875216
 "TCGA-BI-A20A"	"CESC"	"Cervical Squamous Cell Carcinoma (unknown subtype)"	17.9819368
-"TCGA-BJ-A0YZ"	"THCA"	"Thyroid Papillary Carcinoma - Classical/usual"	1.962022497
 "TCGA-BJ-A0Z0"	"THCA"	"Thyroid Papillary Carcinoma - Classical/usual"	1.237399651
 "TCGA-BJ-A0Z2"	"THCA"	"Thyroid Papillary Carcinoma - Follicular (>= 99% follicular patterned)"	2.695455719
 "TCGA-BJ-A0Z3"	"THCA"	"Thyroid Papillary Carcinoma - Classical/usual"	13.61461813
@@ -3091,7 +3094,6 @@
 "TCGA-BK-A56F"	"UCEC"	"Endometrioid endometrial adenocarcinoma"	6.669240378
 "TCGA-BK-A6W3"	"UCEC"	"Uterine Corpus Endometrioid Carcinoma (unknown subtype)"	19.66495592
 "TCGA-BK-A6W4"	"UCEC"	"Uterine Corpus Endometrioid Carcinoma (unknown subtype)"	9.153807639
-"TCGA-BL-A0C8"	"BLCA"	"Muscle invasive urothelial carcinoma (unknown subtype)"	1.365758495
 "TCGA-BL-A13I"	"BLCA"	"Muscle invasive urothelial carcinoma"	17.77589382
 "TCGA-BL-A13J"	"BLCA"	"Muscle invasive urothelial carcinoma"	1.250163879
 "TCGA-BL-A3JM"	"BLCA"	"Muscle invasive urothelial carcinoma"	6.952107478
@@ -3658,7 +3660,6 @@
 "TCGA-CG-5726"	"STAD"	"Stomach  Intestinal Adenocarcinoma  Not Otherwise Specified (NOS)"	2.829102984
 "TCGA-CG-5732"	"STAD"	"Stomach  Intestinal Adenocarcinoma  Not Otherwise Specified (NOS)"	15.3746775
 "TCGA-CG-5734"	"STAD"	"Stomach  Intestinal Adenocarcinoma  Not Otherwise Specified (NOS)"	31.52518656
-"TCGA-CH-5737"	"PRAD"	"Prostate Adenocarcinoma Acinar Type"	1.077144638
 "TCGA-CH-5738"	"PRAD"	"Prostate Adenocarcinoma Acinar Type"	3.935345522
 "TCGA-CH-5739"	"PRAD"	"Prostate Adenocarcinoma Acinar Type"	4.351099171
 "TCGA-CH-5740"	"PRAD"	"Prostate Adenocarcinoma Acinar Type"	3.67117765
@@ -3979,7 +3980,6 @@
 "TCGA-CR-7401"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	3.91865413
 "TCGA-CR-7402"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	22.05826295
 "TCGA-CR-7404"	"HNSC"	"Head and Neck Squamous Cell Carcinoma"	32.98365964
-"TCGA-CS-4938"	"LGG"	"Astrocytoma"	0.287307129
 "TCGA-CS-4941"	"LGG"	"Astrocytoma"	5.039885349
 "TCGA-CS-4942"	"LGG"	"Astrocytoma"	0.805846499
 "TCGA-CS-4943"	"LGG"	"Astrocytoma"	0.595540716
