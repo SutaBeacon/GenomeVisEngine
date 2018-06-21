@@ -24,8 +24,8 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 	fileUrl: '/dist/chords/CpG.v3.bed',
 	fileType: 'tsv',
 	configs: {
-		innerRadius: 0.825 / 0.95,
-		outerRadius: 0.9 / 0.95,
+		innerRadius: 0.83 / 0.95,
+		outerRadius: 0.92 / 0.95,
 		color: function (d, min, max) {
 			return scaleQuantize().domain([min, max]).range(['#3247A6', '#4A46AE', '#6E6BBE', '#8F6BBE', '#CD78C0', '#E0619D', '#ED6086', '#E35E73', '#E56060', '#DF5349', '#DC4035', '#ED2E21'])(d.value)
 		},
@@ -45,8 +45,8 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 	fileUrl: '/dist/chords/CHG.v3.bed',
 	fileType: 'tsv',
 	configs: {
-		innerRadius: 0.725 / 0.95,
-		outerRadius: 0.8 / 0.95,
+		innerRadius: 0.715 / 0.95,
+		outerRadius: 0.805 / 0.95,
 		color: function (d, min, max) {
 			return scaleQuantize().domain([min, max]).range(['#3247A6', '#4A46AE', '#6E6BBE', '#8F6BBE', '#CD78C0', '#E0619D', '#ED6086', '#E35E73', '#E56060', '#DF5349', '#DC4035', '#ED2E21'])(d.value)
 		},
@@ -67,10 +67,10 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 	fileUrl: '/dist/chords/CHH.v3.bed',
 	fileType: 'tsv',
 	configs: {
-		innerRadius: 0.625 / 0.95,
-		outerRadius: 0.7 / 0.95,
+		innerRadius: 0.59 / 0.95,
+		outerRadius: 0.68 / 0.95,
 		color: function (d, min, max) {
-			return scaleQuantize().domain([min, max]).range(['#fc9999', '#fd8bb5', '#ff88d9', '#e288ff', '#c488ff', '#ab88ff', '#8f88ff', '#889fff', '#6487ff', '#64bdff', '#64daff', '#4df2ff'])(d.value)
+			return scaleQuantize().domain([min, max]).range(['#3247A6', '#4A46AE', '#6E6BBE', '#8F6BBE', '#CD78C0', '#E0619D', '#ED6086', '#E35E73', '#E56060', '#DF5349', '#DC4035', '#ED2E21'])(d.value)
 		},
 		tips: function (d) {
 			return [{
@@ -89,10 +89,10 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 	fileUrl: '/dist/chords/repeats.txt',
 	fileType: 'tsv',
 	configs: {
-		innerRadius: 0.525 / 0.95,
-		outerRadius: 0.6 / 0.95,
+		innerRadius: 0.475 / 0.95,
+		outerRadius: 0.565 / 0.95,
 		color: function (d, min, max) {
-			return scaleQuantize().domain([min, max]).range(['#fc9999', '#fd8bb5', '#ff88d9', '#e288ff', '#c488ff', '#ab88ff', '#8f88ff', '#889fff', '#6487ff', '#64bdff', '#64daff', '#4df2ff'])(d.value)
+			return scaleQuantize().domain([min, max]).range(['#3247A6', '#4A46AE', '#6E6BBE', '#8F6BBE', '#CD78C0', '#E0619D', '#ED6086', '#E35E73', '#E56060', '#DF5349', '#DC4035', '#ED2E21'])(d.value)
 		},
 		tips: function (d) {
 			return [{
@@ -111,12 +111,12 @@ new Plot.circular(document.getElementsByTagName('canvas')[0], {
 	fileUrl: '/dist/chords/lncRNA.bed',
 	fileType: 'tsv',
 	configs: {
-		innerRadius: 0.35 / 0.95,
-		outerRadius: 0.5 / 0.95,
-		color: '#E0619D',
-		stroke: '#D3498B',
-		thickness: 0.5,
-		size: 2 * Math.PI,
+		innerRadius: 0.3 / 0.95,
+		outerRadius: 0.45 / 0.95,
+		color: '#3247A6',
+		stroke: '#3247A6',
+		thickness: 0.1,
+		size: 1.2 * Math.PI,
 		// fillOpacity: function (d) {
 		// 	var i = scaleLinear().domain([0, 0.01]).range([0.5, 1]).clamp(true)(d.value)
 		// 	return i;
