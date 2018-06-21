@@ -42,10 +42,10 @@ new Plot.chart(canvas, {
   },
   outlierTips: function (key, d) {
     return [{
-      title: 'X',
+      title: 'Cancer',
       value: key
     }, {
-      title: 'value',
+      title: 'CYT',
       value: d.value
     }, {
       title: 'Histo Subtype',
@@ -54,7 +54,7 @@ new Plot.chart(canvas, {
   },
   boxTips: function (key, quartile) {
     return [{
-        title: 'X',
+        title: 'Cancer',
         value: key
       },
       {

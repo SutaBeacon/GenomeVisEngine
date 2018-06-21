@@ -29,8 +29,8 @@ d3.tsv('/dist/occurrence/Fig_Partial_SCC_PanCancer_PurityAdjusted_ImmGenes_data.
     h: yAxisLabel.length * unitSize.h + (yAxisLabel.length - 1) * gap
   }
   const margin = {
-    h: 120,
-    v: 120
+    h: 100,
+    v: 100
   }
   // text color
   const textColor = {
@@ -61,7 +61,7 @@ d3.tsv('/dist/occurrence/Fig_Partial_SCC_PanCancer_PurityAdjusted_ImmGenes_data.
     }
   }
   new Plot.chart(canvas, {
-    bgColor: 0xffffff
+    bgColor: 0xF2F2F2
   }).occurrence(blocks, {
     contentSize,
     // canvasMargin: margin,
