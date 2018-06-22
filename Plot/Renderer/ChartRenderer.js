@@ -107,7 +107,7 @@ export default class ChartRenderer extends BaseRenderer {
       .call(yAxis);
 
     var rootNode = content.node().rootNode;
-
+    configs.completed && configs.completed()
     function zoom() {
       var node = content.node().glElem;
       // var xPath = cX.select('path.domain').node().glElem;
@@ -443,7 +443,7 @@ export default class ChartRenderer extends BaseRenderer {
     //     '</ul>';
     // }
     var rootNode = content.node().rootNode;
-
+      configs.completed && configs.completed()
     function zoomed() {
       var node = content.node().glElem;
       var xTicks = xAxis._groups[0].map(function (d) {
@@ -752,6 +752,7 @@ export default class ChartRenderer extends BaseRenderer {
         //   cX.call(xAxis.scale(currentEvent.transform.rescaleX(x)));
         //   cY.call(yAxis.scale(currentEvent.transform.rescaleY(y)));
         // }
+        configs.completed && configs.completed()
         var rootNode = content.node().rootNode;
 
         function zoomed() {
